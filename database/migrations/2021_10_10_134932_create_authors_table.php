@@ -14,12 +14,11 @@ class CreateAuthorsTable extends Migration
     public function up()
     {
         Schema::create('authors', function (Blueprint $table) {
-            $table->bigint('id',20);
+            $table->id();
             $table->varchar('content',191);
-            $table->timestamps('created_at');
-            $table->timestamps('updated_at');
+            $table->timestamps();
         });
-    };
+    }
     /**
      * Reverse the migrations.
      *
@@ -29,4 +28,4 @@ class CreateAuthorsTable extends Migration
     {
         Schema::dropIfExists('authors');
     }
-};
+}

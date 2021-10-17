@@ -28,4 +28,4 @@ class TodoController extends Controller
         Author::where('id', $request->id)->delete($form);
         return redirect('/');
     }
-};
+}

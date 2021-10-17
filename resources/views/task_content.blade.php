@@ -9,7 +9,7 @@
         </tr>
         <tr>
           <td>{{$items -> created_at}}</td>
-          <td><input type="text" name="" id="" value="{{$items -> content}}"></td>
+          <td><input type="text" name="update" id="" value="{{$items -> content}}"></td>
           <td>
             <form action="/todo/update" method="post">
               @csrf
