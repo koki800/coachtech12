@@ -1,0 +1,49 @@
+body{
+  background-color: blueviolet;
+}
+
+.todo{
+  width: 73vw;
+  padding: 40px;
+}
+.add_line{
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+}
+.add{
+  color: pink;
+  border: pink solid 1px;
+  border-radius: 25%;
+}
+.add:hover{
+  color: white;
+  background-color: pink;
+}
+
+
+table{
+  margin-top: 40px;
+  text-align: center;
+}
+th{
+  font-weight: bold;
+}
+.update{
+  color:orange;
+  border: orange solid 1px;
+  border-radius: 25%;
+}
+.update:hover{
+  color: white;
+  background-color: orange;
+}
+.delete{
+  color: aquamarine;
+  border: aquamarine solid 1px;
+  border-radius: 25%;
+}
+.delete:hover{
+  color: white;
+  background-color: aquamarine;
+}
