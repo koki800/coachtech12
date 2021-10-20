@@ -11,5 +11,4 @@ class Author extends Model
     
     protected $fillable = ['content','created_at','updated_at'];
 
-    public static $rules =[];
 }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Requests\ClientRequest;
 use App\Models\Author;
 
 class TodoController extends Controller
@@ -11,14 +12,12 @@ class TodoController extends Controller
         $items = Author::all();
         return view('Todo',['items' => $items]);
     }
-    public function create(Request $request){
-        $this->validate($request, Author::$rules);
+    public function create(ClientRequest $request){
         $form = $request->all();
         Author::create($form);
         return redirect('/');
     }
-    public function update(Request $request){
-        $this->validate($request, Author::$rules);
+    public function update(ClientRequest $request){
         $form = $request->all();
         Author::where('id', $request->id)->update($form);
         return redirect('/');
