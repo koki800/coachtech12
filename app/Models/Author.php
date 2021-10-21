@@ -9,6 +9,6 @@ class Author extends Model
 {
     use HasFactory;
     
-    protected $fillable = ['content','created_at','updated_at'];
+    protected $fillable = ['content','updated_at'];
 
 }
