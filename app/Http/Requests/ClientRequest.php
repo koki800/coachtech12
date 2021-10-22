@@ -31,7 +31,7 @@ class ClientRequest extends FormRequest
     public function messages()
     {
         return [
-            'content.required' =>'タスクを入力してください'
+            'content.required' =>'タスクを入力してください',
             'content.max:20' => 'タスクを20字以下にしてください'
         ];
     }
