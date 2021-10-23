@@ -10,7 +10,7 @@ class TodoController extends Controller
 {   
     public function index(){
         $items = Author::all();
-        return view('Todo',['items' => $items]);
+        return view('task_content',['items' => $items]);
     }
     public function create(ClientRequest $request){
         $form = $request->all();

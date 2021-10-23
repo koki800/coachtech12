@@ -40,15 +40,22 @@ body{
 table{
   margin-top: 40px;
   text-align: center;
+  line-height: 40px;
+  width:95%;
 }
 th{
   font-weight: bold;
+}
+.content{
+  line-height: 20px;
+  width:90%;
 }
 .update{
   color:orange;
   border: orange solid 2px;
   border-radius: 25%;
   font-weight: bold;
+  padding: 5px 10px;
 }
 .update:hover{
   color: white;
@@ -59,6 +66,7 @@ th{
   border: aquamarine solid 2px;
   border-radius: 25%;
   font-weight: bold;
+  padding: 5px 10px;
 }
 .delete:hover{
   color: white;
